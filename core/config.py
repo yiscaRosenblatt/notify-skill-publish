@@ -23,8 +23,7 @@ load_dotenv()
 
 class Settings(BaseSettings):
     MONGO_URI: str = "mongodb+srv://yiscarose:Z754IlLTUkiqfpIZ@by-staging.dxg0wdb.mongodb.net/"
-
-    SENDGRID_API_KEY: str =  os.getenv("SENDGRID_API_KEY")
+    SENDGRID_API_KEY: str = "XXXX"
     SENDGRID_FROM_EMAIL: str = "do-not-reply@betayeda.com"
     SENDGRID_SKILL_PUBLISHED_TEMPLATE_ID: str = "d-28612ca829954eae891c7867c8420864"
 
