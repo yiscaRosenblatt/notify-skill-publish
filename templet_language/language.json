@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "en": {
+      "subject": "A new skill {skill_name} has been published by {creator_name}",
+      "title": "New Skill Available in BetaYeda",
+      "body": {
+        "hi": "Hi",
+        "firstLinePatr1" : "A new digital lesson titled",
+        "firstLinePatr2" : "has just been published in the ",
+        "firstLinePatr3" : "workspace by",
+        "secondLine" : "It's now available for you to explore on the BetaYeda platform.",
+        "AccessTheSkill" : "Access the Skill"
+      },
+      "footer": "<div style='text-align: center;'>This is an automatic message from BetaYeda. Please do not reply.</div>"
+    },
+    "he": {
+      "subject": "מיומנות חדשה {skill_name} פורסמה על ידי {creator_name}",
+      "title": "BetaYeda מיומנות חדשה זמינה במערכת",
+      "body": {
+        "hi": "שלום",
+        "firstLinePatr1": "מיומנות דיגיטלית חדשה בשם",
+        "firstLinePatr2": "פורסמה כעת במרחב העבודה",
+        "firstLinePatr3": "על ידי",
+        "secondLine": "המיומנות זמינה עבורך כעת במערכת BetaYeda.",
+        "AccessTheSkill": "למעבר למיומנות"
+      },
+      "footer": "<div style='text-align: center;'>זוהי הודעה אוטומטית ממערכת BetaYeda. נא לא להשיב להודעה זו.</div>"
+    }
+  }
+}
