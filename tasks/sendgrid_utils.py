@@ -23,25 +23,42 @@ from sendgrid.helpers.mail import Mail
 from core.config import settings
 
 
-async def send_email(to_email: str, dynamic_data: dict, template_id: str, subject: str = None):
+
+def send_email(email, template_id, data):
+
+    sg = SendGridAPIClient(api_key=settings.SENDGRID_API_KEY)
+    msg = Mail(
+        from_email=settings.DEFAULT_EMAIL_FROM,
+        to_emails=[email],
+    )
+
+    msg.dynamic_template_data = data
+    msg.template_id = template_id
     try:
-        message = Mail(
-            from_email=settings.SENDGRID_FROM_EMAIL,
-            to_emails=to_email,
-        )
-        message.template_id = template_id
-        message.dynamic_template_data = dynamic_data
-        if subject:
-            message.subject = subject
-
-        sg = SendGridAPIClient(settings.SENDGRID_API_KEY)
-        response = sg.send(message)
-
-        print("Status Code:", response.status_code)
-        print("Body:", response.body)
-        print("Headers:", response.headers)
-        print("Dynamic Data:", dynamic_data)
-
-        print(f"Email sent to {to_email}: {response.status_code}")
+        resp = sg.send(msg)
     except Exception as e:
-        print(f"Error sending email: {e}")
+        print(e)
+
+
+# async def send_email(to_email: str, dynamic_data: dict, template_id: str, subject: str = None):
+#     try:
+#         message = Mail(
+#             from_email=settings.SENDGRID_FROM_EMAIL,
+#             to_emails=to_email,
+#         )
+#         message.template_id = template_id
+#         message.dynamic_template_data = dynamic_data
+#         if subject:
+#             message.subject = subject
+#
+#         sg = SendGridAPIClient(settings.SENDGRID_API_KEY)
+#         response = sg.send(message)
+#
+#         print("Status Code:", response.status_code)
+#         print("Body:", response.body)
+#         print("Headers:", response.headers)
+#         print("Dynamic Data:", dynamic_data)
+#
+#         print(f"Email sent to {to_email}: {response.status_code}")
+#     except Exception as e:
+#         print(f"Error sending email: {e}")

@@ -17,12 +17,14 @@ from tasks.models import (
 import uuid
 from bson.binary import Binary, UUID_SUBTYPE
 
-language = "he"
+language = "en"
 
 with open("templet_language/language.json", "r", encoding="utf-8") as f:
     templates = json.load(f)
-
-skill_template = templates["skill"][language]
+try:
+    skill_template = templates["skill"][language]
+except:
+    skill_template = templates["skill"]["en"]
 text_direction = "rtl" if language in ["he", "ar"] else "ltr"
 text_align = "right" if language in ["he", "ar"] else "left"
 
@@ -140,11 +142,10 @@ async def notify_skill_published(skill_id: str):
                 org_login_url=f"https://app.betayeda.com/org/{workspace.id}"
             )
 
-            await send_email(
-                to_email=user.email,
-                dynamic_data=dynamic_data,
-                template_id=settings.SENDGRID_SKILL_PUBLISHED_TEMPLATE_ID,
-                subject=dynamic_data["subject"]
+            send_email(
+                email=user.email,
+                data=dynamic_data,
+                template_id=settings.SENDGRID_SKILL_PUBLISHED_TEMPLATE_ID
             )
 
             print(f"✔Email sent to: {user.full_name} <{user.email}>")

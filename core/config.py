@@ -22,10 +22,10 @@ import os
 load_dotenv()
 
 class Settings(BaseSettings):
-    MONGO_URI: str = "mongodb+srv://yiscarose:Z754IlLTUkiqfpIZ@by-staging.dxg0wdb.mongodb.net/"
-    SENDGRID_API_KEY: str = "XXXX"
-    SENDGRID_FROM_EMAIL: str = "do-not-reply@betayeda.com"
-    SENDGRID_SKILL_PUBLISHED_TEMPLATE_ID: str = "d-28612ca829954eae891c7867c8420864"
+    MONGO_URI: str = "XXX"
+    SENDGRID_API_KEY: str = "XXX"
+    DEFAULT_EMAIL_FROM: str = "do-not-reply@betayeda.com"
+    SENDGRID_SKILL_PUBLISHED_TEMPLATE_ID: str = "d-45f4edb43dfc48089015971ba9868794"
 
     CELERY: dict = {
         "broker_url": "redis://localhost:6379/0", #כתובת ה־broker של Celery

@@ -25,6 +25,63 @@
         "AccessTheSkill": "למעבר למיומנות"
       },
       "footer": "<div style='text-align: center;'>זוהי הודעה אוטומטית ממערכת BetaYeda. נא לא להשיב להודעה זו.</div>"
+    },
+    "ar": {
+      "subject": "تم نشر مهارة جديدة {skill_name} بواسطة {creator_name}",
+      "title": "مهارة جديدة متاحة على BetaYeda",
+      "body": {
+        "hi": "مرحبًا",
+        "firstLinePatr1": "تم نشر درس رقمي جديد بعنوان",
+        "firstLinePatr2": "في مساحة العمل ",
+        "firstLinePatr3": "بواسطة",
+        "secondLine": "وهو متاح الآن للاستكشاف على منصة BetaYeda.",
+        "AccessTheSkill": "الوصول إلى المهارة"
+      },
+      "footer": "<div style='text-align: center;'>هذه رسالة تلقائية من BetaYeda. الرجاء عدم الرد.</div>"
+    },
+    "ru": {
+      "subject": "Новый навык {skill_name} опубликован пользователем {creator_name}",
+      "title": "Новый навык доступен на BetaYeda",
+      "body": {
+        "hi": "Привет",
+        "firstLinePatr1": "Опубликован новый цифровой урок под названием",
+        "firstLinePatr2": "в рабочем пространстве ",
+        "firstLinePatr3": "пользователем",
+        "secondLine": "Теперь он доступен для изучения на платформе BetaYeda.",
+        "AccessTheSkill": "Перейти к навыку"
+      },
+      "footer": "<div style='text-align: center;'>Это автоматическое сообщение от BetaYeda. Пожалуйста, не отвечайте.</div>"
+    },
+    "de": {
+      "subject": "Eine neue Fähigkeit {skill_name} wurde veröffentlicht von {creator_name}",
+      "title": "Neue Fähigkeit verfügbar auf BetaYeda",
+      "body": {
+        "hi": "Hallo",
+        "firstLinePatr1": "Eine neue digitale Lektion mit dem Titel",
+        "firstLinePatr2": "wurde gerade veröffentlicht im ",
+        "firstLinePatr3": "Arbeitsbereich von",
+        "secondLine": "Sie ist jetzt auf der BetaYeda-Plattform verfügbar.",
+        "AccessTheSkill": "Zur Fähigkeit"
+      },
+      "footer": "<div style='text-align: center;'>Dies ist eine automatische Nachricht von BetaYeda. Bitte nicht antworten.</div>"
+    },
+    "es": {
+      "subject": "Se ha publicado una nueva habilidad {skill_name} por {creator_name}",
+      "title": "Nueva habilidad disponible en BetaYeda",
+      "body": {
+        "hi": "Hola",
+        "firstLinePatr1": "Se ha publicado una nueva lección digital titulada",
+        "firstLinePatr2": "en el espacio de trabajo ",
+        "firstLinePatr3": "por",
+        "secondLine": "Ahora está disponible para explorar en la plataforma BetaYeda.",
+        "AccessTheSkill": "Acceder a la habilidad"
+      },
+      "footer": "<div style='text-align: center;'>Este es un mensaje automático de BetaYeda. Por favor, no responda.</div>"
     }
+
+
+
+
+
   }
 }
